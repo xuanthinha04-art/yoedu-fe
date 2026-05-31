@@ -1,0 +1,9 @@
+{
+  "semi": true,          // Bật dấu chấm phẩy ở cuối câu lệnh
+  "tabWidth": 2,         // Số khoảng trắng dùng cho mỗi tab
+  "printWidth": 100,     // Chiều rộng tối đa dòng trước khi xuống dòng
+  "singleQuote": true,   // Dùng dấu nháy đơn thay vì nháy kép
+  "trailingComma": "all",// Thêm dấu phẩy ở cuối phần tử khi có thể (mảng, object, param)
+  "bracketSpacing": true,// Thêm khoảng trắng bên trong dấu ngoặc nhọn { a: 1 }
+  "endOfLine": "auto"    // Tự động chọn kiểu xuống dòng phù hợp với hệ điều hành
+}
