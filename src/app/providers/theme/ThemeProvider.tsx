@@ -17,7 +17,8 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     localStorage.setItem('theme', theme);
   }, [theme]);
 
-  return <ThemeContext.Provider value={{ theme, toggleTheme }}>{children}</ThemeContext.Provider>;
+  return <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    {children}</ThemeContext.Provider>;
 };
 
 export default ThemeProvider;

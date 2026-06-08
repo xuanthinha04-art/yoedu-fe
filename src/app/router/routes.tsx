@@ -10,12 +10,12 @@ import ProtectedRoute from './ProtectedRoute';
 
 import LoginPage from '@/features/auth/pages/LoginPage';
 import RegisterPage from '@/features/auth/pages/RegisterPage';
-import StudentPage from '@/features/students/pages/StudentPage';
-import UserProfilePage from '@/features/users/pages/UserProfilePage';
-import TeacherPage from '@/features/teachers/pages/TeacherPage';
-import CoursePage from '@/features/courses/pages/CoursePage';
-import DashboardPage from '@/features/dashboard/pages/Dashboard';
-import EnrollmentPage from '@/features/enrollments/pages/EnrollmentPage';
+import Student from '@/features/student_tailwindcss/student_antd/StudentAntd';
+import DashboardPage from '@/features/dashboardpage/DashboardPage';
+// import UserProfilePage from '@/features/users/pages/UserProfilePage';
+// import TeacherPage from '@/features/teachers/pages/TeacherPage';
+// import CoursePage from '@/features/courses/pages/CoursePage';
+// import EnrollmentPage from '@/features/enrollments/pages/EnrollmentPage';
 
 export const router = createBrowserRouter([
   /******************** AUTH *********************/
@@ -41,7 +41,7 @@ export const router = createBrowserRouter([
 
   /******************** MAIN *********************/
   {
-    element: <ProtectedRoute />,
+    element: <ProtectedRoute  />,
     children: [
       {
         path: '/',
@@ -55,26 +55,26 @@ export const router = createBrowserRouter([
             index: true,
             element: <DashboardPage />,
           },
-          {
-            path: 'profile',
-            element: <UserProfilePage />,
-          },
+          // {
+          //   path: 'profile',
+          //   element: <UserProfilePage />,
+          // },
           {
             path: 'students',
-            element: <StudentPage />,
+            element: <Student />,
           },
-          {
-            path: 'teachers',
-            element: <TeacherPage />,
-          },
-          {
-            path: 'courses',
-            element: <CoursePage />,
-          },
-          {
-            path: 'enrollments',
-            element: <EnrollmentPage />,
-          },
+        //   {
+        //     path: 'teachers',
+        //     element: <TeacherPage />,
+        //   },
+        //   {
+        //     path: 'courses',
+        //     element: <CoursePage />,
+        //   },
+        //   {
+        //     path: 'enrollments',
+        //     element: <EnrollmentPage />,
+        //   },
         ],
       },
     ],
