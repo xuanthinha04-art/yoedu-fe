@@ -1,4 +1,5 @@
 import { axiosClient } from "@/shared/lib/axios";
+
 import type { LoginPayload, RegisterPayload } from "../types/auth-type";
 
 export const loginApi = (payload: LoginPayload) => {
@@ -10,5 +11,5 @@ export const registerApi = (payload: RegisterPayload) => {
 };
 
 export const getMeApi = () => {
-    return axiosClient.get('/auth/me');
+    return axiosClient.get('/users/me');
 };
